@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Burger from './components/Burger';
+import Home from './components/Home';
+import { DataProvider } from './context/DataProvider';
 
 function App() {
   return (
-    <div className="App">
-      <Burger />
-    </div>
+    <DataProvider>
+      <Home />
+    </DataProvider>
   );
 }
 

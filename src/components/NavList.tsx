@@ -1,4 +1,4 @@
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import React from 'react';
 import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
@@ -21,10 +21,10 @@ const NavList = (): JSX.Element => {
   return (
     <List>
       {navList.map((list) => (
-        <ListItemButton key={list.id}>
+        <ListItem button key={list.id}>
           <ListItemIcon>{list.icon}</ListItemIcon>
           <ListItemText primary={list.name} />
-        </ListItemButton>
+        </ListItem>
       ))}
     </List>
   );
